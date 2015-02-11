@@ -19,6 +19,8 @@ import java.io.Serializable;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.bonitasoft.performance.Credential;
+import org.bonitasoft.performance.SimpleTest;
 import org.perfcake.PerfCakeException;
 import org.perfcake.message.Message;
 import org.perfcake.message.sender.AbstractSender;
@@ -31,23 +33,73 @@ public class BonitaSender extends AbstractSender {
 
     static Logger logger = Logger.getLogger(BonitaGenerator.class);
 
+    private String test = "";
+
+    private SimpleTest theTest;
+    private String tenant;
+    private String username;
+    private String password;
+    private Credential credential;
+
     @Override
     public void init() throws Exception {
-        logger.warn("init sender");
+        logger.warn("init sender with test "+test);
+        Class<?> testClass = Thread.currentThread().getContextClassLoader().loadClass(test);
+        theTest = (SimpleTest) testClass.newInstance();
+
+        credential = new Credential(tenant, username, password);
+        theTest.install();
         Thread.sleep(50);
 
     }
 
     @Override
     public void close() throws PerfCakeException {
+
+        try {
+            theTest.uninstall();
+        } catch (Exception e) {
+            throw new PerfCakeException(e);
+        }
         logger.warn("close sender");
     }
 
     @Override
     public Serializable doSend(Message message, Map<String, String> map, MeasurementUnit measurementUnit) throws Exception {
-
-        logger.warn("do send");
+        logger.warn("do send " + message);
         Thread.sleep(500);
-        return null;
+        return (Serializable) theTest.executeInstance();
+    }
+
+    public String getTest() {
+        return test;
+    }
+
+    public void setTest(String test) {
+        this.test = test;
+    }
+
+    public String getTenant() {
+        return tenant;
+    }
+
+    public void setTenant(String tenant) {
+        this.tenant = tenant;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }

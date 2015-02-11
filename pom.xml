@@ -27,9 +27,15 @@
             <version>3.3</version>
         </dependency>
         <dependency>
-            <groupId>org.bonitasoft.perf</groupId>
-            <artifactId>bonitaBPM6-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.bonitasoft.engine.test</groupId>
+            <artifactId>bonita-integration-tests-local</artifactId>
+            <version>6.5.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-classic</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 

@@ -15,8 +15,13 @@
 
 package org.bonitasoft.performance.perfcake;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
+import org.bonitasoft.engine.TestsInitializer;
+import org.perfcake.message.MessageTemplate;
 import org.perfcake.message.generator.DefaultMessageGenerator;
+import org.perfcake.message.sender.MessageSenderManager;
 
 /**
  * @author Baptiste Mesta
@@ -24,6 +29,13 @@ import org.perfcake.message.generator.DefaultMessageGenerator;
 public class BonitaGenerator extends DefaultMessageGenerator {
 
     static Logger logger = Logger.getLogger(BonitaGenerator.class);
+
+    @Override
+    public void init(MessageSenderManager messageSenderManager, List<MessageTemplate> messageStore) throws Exception {
+        logger.warn("init");
+        TestsInitializer.beforeAll();
+        super.init(messageSenderManager, messageStore);
+    }
 
     @Override
     public void generate() throws Exception {
@@ -37,5 +49,10 @@ public class BonitaGenerator extends DefaultMessageGenerator {
         Thread.sleep(50);
         super.shutdown();
         logger.warn("shutdown");
+        try {
+            TestsInitializer.afterAll();
+       } catch (Exception e) {
+           logger.error("on shutdown:",e);
+        }
     }
 }

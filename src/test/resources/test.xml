@@ -4,7 +4,7 @@
       <run type="iteration" value="10"/>
    </generator>
    <sender class="org.bonitasoft.performance.perfcake.BonitaSender">
-      <property name="test" value="value"/>
+      <property name="test" value="org.bonitasoft.performance.PerfProcess1"/>
    </sender>
    <reporting>
       <reporter class="ThroughputStatsReporter">

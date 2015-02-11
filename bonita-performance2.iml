@@ -31,6 +31,7 @@
     <orderEntry type="library" name="Maven: org.mvel:mvel2:2.1.9.Final" level="project" />
     <orderEntry type="library" name="Maven: org.kie:kie-api:6.1.0.Beta3" level="project" />
     <orderEntry type="library" name="Maven: org.kie:kie-internal:6.1.0.Beta3" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.drools:drools-compiler:6.1.0.Beta3" level="project" />
     <orderEntry type="library" name="Maven: org.antlr:antlr-runtime:3.5" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jdt.core.compiler:ecj:4.3.1" level="project" />
@@ -48,7 +49,9 @@
     <orderEntry type="library" name="Maven: commons-cli:commons-cli:1.2" level="project" />
     <orderEntry type="library" name="Maven: javax.websocket:javax.websocket-api:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.jboss.netty:netty:3.2.6.Final" level="project" />
-    <orderEntry type="module" module-name="bonitaBPM6-common" />
+    <orderEntry type="module" module-name="bonita-integration-tests-local" />
+    <orderEntry type="library" name="Maven: org.assertj:assertj-core:1.5.0" level="project" />
+    <orderEntry type="module" module-name="bonita-integration-tests-client" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
@@ -56,35 +59,162 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-core:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:3.1.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-asm:3.1.2.RELEASE" level="project" />
-    <orderEntry type="module" module-name="perf-common" />
-    <orderEntry type="module" module-name="perf-sql" />
-    <orderEntry type="module" module-name="perf-comparator" />
-    <orderEntry type="library" name="Maven: net.sf.opencsv:opencsv:2.3" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-client:5.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.fusesource.hawtbuf:hawtbuf:1.9" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.geronimo.specs:geronimo-j2ee-management_1.1_spec:1.0.1" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-broker:5.8.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.activemq:activemq-openwire-legacy:5.8.0" level="project" />
-    <orderEntry type="library" name="Maven: jfree:jfreechart:1.0.13" level="project" />
-    <orderEntry type="library" name="Maven: jfree:jcommon:1.0.16" level="project" />
-    <orderEntry type="module" module-name="bonita-client-test-utils" />
-    <orderEntry type="module" module-name="bonita-client-util" />
-    <orderEntry type="module" module-name="bonita-client-api-local" />
+    <orderEntry type="library" name="Maven: xmlunit:xmlunit:1.4" level="project" />
+    <orderEntry type="library" name="Maven: commons-dbcp:commons-dbcp:1.4" level="project" />
+    <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.5.5" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.1" level="project" />
     <orderEntry type="module" module-name="bonita-common" />
     <orderEntry type="module" module-name="bonita-common-api" />
     <orderEntry type="module" module-name="bonita-common-api-impl" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.1" level="project" />
+    <orderEntry type="module" module-name="bonita-client" />
+    <orderEntry type="module" module-name="bonita-client-api-local" />
     <orderEntry type="module" module-name="bonita-client-api-ejb3" />
     <orderEntry type="module" module-name="bonita-client-api-http" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.2.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.2.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpmime:4.2.5" level="project" />
-    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.7" level="project" />
+    <orderEntry type="module" module-name="bonita-client-util" />
     <orderEntry type="module" module-name="bonita-client-api-tcp" />
-    <orderEntry type="library" name="Maven: commons-io:commons-io:2.1" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: ch.qos.logback:logback-classic:1.0.13" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: ch.qos.logback:logback-core:1.0.13" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.4" level="project" />
+    <orderEntry type="module" module-name="bonita-common-test-utils" />
+    <orderEntry type="module" module-name="bonita-client-test-utils" />
+    <orderEntry type="module" module-name="bonita-server" />
+    <orderEntry type="module" module-name="bonita-process-engine" />
+    <orderEntry type="module" module-name="bonita-home-server" />
+    <orderEntry type="module" module-name="bonita-actor-mapping-api" />
+    <orderEntry type="module" module-name="bonita-category-api" />
+    <orderEntry type="module" module-name="bonita-connector-service-api" />
+    <orderEntry type="module" module-name="bonita-user-filter-api" />
+    <orderEntry type="module" module-name="bonita-login-api" />
+    <orderEntry type="module" module-name="bonita-operation-model" />
+    <orderEntry type="module" module-name="bonita-operation-api" />
+    <orderEntry type="module" module-name="bonita-process-comment-api" />
+    <orderEntry type="module" module-name="bonita-document-api" />
+    <orderEntry type="module" module-name="bonita-process-instance-api" />
+    <orderEntry type="module" module-name="bonita-platform-login-api" />
+    <orderEntry type="module" module-name="bonita-expression-resolver-api" />
+    <orderEntry type="module" module-name="bonita-supervisor-mapping-api" />
+    <orderEntry type="module" module-name="bonita-commons" />
+    <orderEntry type="module" module-name="bonita-archive-api" />
+    <orderEntry type="module" module-name="bonita-authentication-api" />
+    <orderEntry type="module" module-name="bonita-cache-api" />
+    <orderEntry type="module" module-name="bonita-classloader-api" />
+    <orderEntry type="module" module-name="bonita-command-api" />
+    <orderEntry type="module" module-name="bonita-connector-executor-api" />
+    <orderEntry type="module" module-name="bonita-data-definition-model" />
+    <orderEntry type="module" module-name="bonita-data-instance-api" />
+    <orderEntry type="module" module-name="bonita-dependency-api" />
+    <orderEntry type="module" module-name="bonita-events-api" />
+    <orderEntry type="module" module-name="bonita-expression-api" />
+    <orderEntry type="module" module-name="bonita-external-identity-mapping-api" />
+    <orderEntry type="module" module-name="bonita-identity-api" />
+    <orderEntry type="module" module-name="bonita-lock-api" />
+    <orderEntry type="module" module-name="bonita-log-api" />
+    <orderEntry type="module" module-name="bonita-log-technical-api" />
+    <orderEntry type="module" module-name="bonita-persistence-read" />
+    <orderEntry type="module" module-name="bonita-platform-api" />
+    <orderEntry type="module" module-name="bonita-platform-authentication-api" />
+    <orderEntry type="module" module-name="bonita-platform-command-api" />
+    <orderEntry type="module" module-name="bonita-platform-session-api" />
+    <orderEntry type="module" module-name="bonita-profile-api" />
+    <orderEntry type="module" module-name="bonita-recorder-api" />
+    <orderEntry type="module" module-name="bonita-scheduler-api" />
+    <orderEntry type="module" module-name="bonita-session-api" />
+    <orderEntry type="module" module-name="bonita-session-accessor-read" />
+    <orderEntry type="module" module-name="bonita-session-accessor-write" />
+    <orderEntry type="module" module-name="bonita-theme-api" />
+    <orderEntry type="module" module-name="bonita-transaction-api" />
+    <orderEntry type="module" module-name="bonita-xml-api" />
+    <orderEntry type="module" module-name="bonita-work-api" />
+    <orderEntry type="module" module-name="bonita-builder" />
+    <orderEntry type="module" module-name="bonita-actor-mapping-impl" />
+    <orderEntry type="module" module-name="bonita-server-api-http" />
+    <orderEntry type="library" name="Maven: commons-fileupload:commons-fileupload:1.2.2" level="project" />
+    <orderEntry type="module" module-name="bonita-archive-impl" />
+    <orderEntry type="module" module-name="bonita-persistence-api" />
+    <orderEntry type="module" module-name="bonita-authentication-api-impl" />
+    <orderEntry type="module" module-name="bonita-business-application (2) (org.bonitasoft.engine.application)" />
+    <orderEntry type="module" module-name="bonita-cache-ehcache" />
+    <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache-core:2.4.7" level="project" />
+    <orderEntry type="module" module-name="bonita-category-api-impl" />
+    <orderEntry type="module" module-name="bonita-classloader-impl" />
+    <orderEntry type="library" name="Maven: org.apache.xbean:xbean-classloader:3.7" level="project" />
+    <orderEntry type="module" module-name="bonita-command-impl" />
+    <orderEntry type="module" module-name="bonita-connector-executor-api-impl" />
+    <orderEntry type="module" module-name="bonita-connector-service-api-impl" />
+    <orderEntry type="module" module-name="bonita-data-definition-model-impl" />
+    <orderEntry type="module" module-name="bonita-data-instance-impl" />
+    <orderEntry type="module" module-name="bonita-dependency-impl" />
+    <orderEntry type="module" module-name="bonita-events-api-impl" />
+    <orderEntry type="module" module-name="bonita-expression-api-impl" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.1" level="project" />
+    <orderEntry type="module" module-name="bonita-expression-resolver-api-impl" />
+    <orderEntry type="module" module-name="bonita-external-identity-mapping-impl" />
+    <orderEntry type="module" module-name="bonita-incident-api" />
+    <orderEntry type="module" module-name="bonita-incident-log" />
+    <orderEntry type="module" module-name="bonita-identity-impl" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.7" level="project" />
+    <orderEntry type="library" name="Maven: org.mindrot:jbcrypt:0.3m" level="project" />
+    <orderEntry type="module" module-name="bonita-lock-api-memory-impl" />
+    <orderEntry type="module" module-name="bonita-login-api-impl" />
+    <orderEntry type="module" module-name="bonita-log-impl" />
+    <orderEntry type="module" module-name="bonita-operation-api-impl" />
+    <orderEntry type="module" module-name="bonita-operation-model-impl" />
+    <orderEntry type="module" module-name="bonita-page" />
+    <orderEntry type="module" module-name="bonita-persistence-hibernate" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:4.2.13.Final" level="project" />
+    <orderEntry type="library" name="Maven: antlr:antlr:2.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.1.0.GA" level="project" />
+    <orderEntry type="library" name="Maven: org.javassist:javassist:3.18.1-GA" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate.common:hibernate-commons-annotations:4.0.2.Final" level="project" />
+    <orderEntry type="module" module-name="bonita-persistence-db" />
+    <orderEntry type="module" module-name="bonita-platform-impl" />
+    <orderEntry type="module" module-name="bonita-platform-authentication-api-impl" />
+    <orderEntry type="module" module-name="bonita-platform-command-impl" />
+    <orderEntry type="module" module-name="bonita-platform-login-api-impl" />
+    <orderEntry type="module" module-name="bonita-platform-session-impl" />
+    <orderEntry type="module" module-name="bonita-process-comment-api-impl" />
+    <orderEntry type="module" module-name="bonita-process-definition-api" />
+    <orderEntry type="module" module-name="bonita-process-definition-impl" />
+    <orderEntry type="module" module-name="bonita-document-impl" />
+    <orderEntry type="module" module-name="bonita-process-instance-impl" />
+    <orderEntry type="module" module-name="bonita-recorder-impl" />
+    <orderEntry type="module" module-name="bonita-reporting-impl" />
+    <orderEntry type="module" module-name="bonita-scheduler-quartz" />
+    <orderEntry type="module" module-name="bonita-scheduler-impl" />
+    <orderEntry type="library" name="Maven: org.quartz-scheduler:quartz:2.2.1" level="project" />
+    <orderEntry type="library" name="Maven: c3p0:c3p0:0.9.1.1" level="project" />
+    <orderEntry type="module" module-name="bonita-sequence-api" />
+    <orderEntry type="module" module-name="bonita-sequence-impl" />
+    <orderEntry type="module" module-name="bonita-session-impl" />
+    <orderEntry type="module" module-name="bonita-session-accessor-threadlocal" />
+    <orderEntry type="module" module-name="bonita-supervisor-mapping-impl" />
+    <orderEntry type="module" module-name="bonita-synchro-service" />
+    <orderEntry type="module" module-name="bonita-synchro-service-impl" />
+    <orderEntry type="module" module-name="bonita-synchro-register" />
+    <orderEntry type="module" module-name="bonita-time-tracker" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-collections4:4.0" level="project" />
+    <orderEntry type="module" module-name="bonita-transaction-impl" />
+    <orderEntry type="module" module-name="bonita-data-instance-transient" />
+    <orderEntry type="module" module-name="bonita-log-technical-slf4j" />
+    <orderEntry type="module" module-name="bonita-user-filter-impl" />
+    <orderEntry type="module" module-name="bonita-work-impl" />
+    <orderEntry type="module" module-name="bonita-xml-impl" />
+    <orderEntry type="module" module-name="bonita-web-commands" />
+    <orderEntry type="module" module-name="bonita-profile-impl" />
+    <orderEntry type="module" module-name="bonita-theme-impl" />
+    <orderEntry type="module" module-name="bonita-sql" />
+    <orderEntry type="library" name="Maven: dom4j:dom4j:1.6.1" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.0.b2" level="project" />
+    <orderEntry type="module" module-name="bonita-server-test-utils" />
+    <orderEntry type="library" name="Maven: org.postgresql:postgresql:9.3-1102-jdbc41" level="project" />
+    <orderEntry type="library" name="Maven: com.h2database:h2:1.3.175" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.26" level="project" />
+    <orderEntry type="library" name="Maven: com.oracle:ojdbc:6" level="project" />
+    <orderEntry type="library" name="Maven: com.microsoft.jdbc:sqlserver:4.0.2206.100" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.btm:btm:2.1.4" level="project" />
+    <orderEntry type="library" name="Maven: javax.transaction:jta:1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.jolbox:bonecp:0.7.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:r08" level="project" />
   </component>
 </module>
