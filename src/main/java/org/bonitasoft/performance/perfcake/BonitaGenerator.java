@@ -35,6 +35,9 @@ public class BonitaGenerator extends DefaultMessageGenerator {
         logger.warn("init");
         TestsInitializer.beforeAll();
         super.init(messageSenderManager, messageStore);
+        for (MessageTemplate messageTemplate : messageStore) {
+            messageTemplate.getMessage().getProperty("testName")
+        }
     }
 
     @Override

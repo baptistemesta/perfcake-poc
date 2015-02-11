@@ -8,10 +8,9 @@ import org.perfcake.scenario.ScenarioLoader;
  */
 public class BonitaPerfCakeTest {
 
-
     @Test
     public void test() throws PerfCakeException {
-        Scenario scenario = ScenarioLoader.load("/home/baptiste/git/bonita-performance2/src/test/resources/test.xml");
+        Scenario scenario = ScenarioLoader.load("/home/baptiste/git/perfcake-poc/src/test/resources/test.xml");
         scenario.init();
         scenario.run();
     }

@@ -4,7 +4,7 @@
       <run type="iteration" value="10"/>
    </generator>
    <sender class="org.bonitasoft.performance.perfcake.BonitaSender">
-      <property name="test" value="org.bonitasoft.performance.PerfProcess1"/>
+      <property name="test" value="org.bonitasoft.performance.GroovyPerfTest"/>
    </sender>
    <reporting>
       <reporter class="ThroughputStatsReporter">
